@@ -49,6 +49,11 @@ const config: HardhatUserConfig = {
       accounts: [DEPLOYER_PRIVATE_KEY],
       gasPrice: utils.parseUnits("50", "gwei").toNumber(),
     },
+    fuji: {
+      url: 'https://api.avax-test.network/ext/bc/C/rpc',
+      accounts: [DEPLOYER_PRIVATE_KEY],
+      chainId:43113,
+    },
   },
   abiExporter: {
     path: "./dist/abi",

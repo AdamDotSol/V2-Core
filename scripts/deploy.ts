@@ -14,3 +14,15 @@ task('deploy-factory', 'Deploys UniswapV2Factory contract')
 
         logger.info(instance.address)
     })
+
+task("verify-factory", "Verifies factory Contract")
+    .setAction(
+        async (args, hre) => {
+            await hre.run("verify:verify", {
+                address: config.factory,
+                constructorArguments: [config.feeToSetter],
+                contract: "contracts/UniswapV2Factory.sol:UniswapV2Factory"
+            });
+        }
+    );
+

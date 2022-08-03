@@ -1,3 +1,4 @@
 export default {
-    feeToSetter: "0x01fac9304f3C8ec4bb2CB43B0C5e25F3EC3c3e3b"
+    feeToSetter: "0x2a1C5D6Ef62aba624EaBD9e647558ED144BB6F32",
+    factory: "0x33b7F265E6978A7927883011e07CEa58A6085084",
 }
