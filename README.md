@@ -15,11 +15,29 @@ The following assumes the use of `node@>=10`.
 
 ## Install Dependencies
 
-`yarn`
+`yarn install`
+
+## Configuration
+
+Edit `.env.example` file in `.env` and update it : 
+
+`ALCHEMY_PROJECT_ID=`
+
+`ETHERSCAN_API_KEY=`
+
+`DEPLOYER_PRIVATE_KEY=`
 
 ## Compile Contracts
 
-`yarn compile`
+`npx hardhat compile`
+
+## Deploy Contracts
+
+`npx hardhat deploy-factory --network fuji`
+
+## Verify Contracts
+
+`npx hardhat verify-factory --network fuji`
 
 ## Run Tests
 
