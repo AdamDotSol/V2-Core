@@ -33,10 +33,12 @@ Edit `.env.example` file in `.env` and update it :
 
 ## Deploy Contracts
 
+
+### Factory
+#### Deployment : 
 `npx hardhat deploy-factory --network fuji`
 
-## Verify Contracts
-
+#### Verify : 
 `npx hardhat verify-factory --network fuji`
 
 ## Run Tests
